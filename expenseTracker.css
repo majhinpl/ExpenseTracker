@@ -1,0 +1,95 @@
+form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+form input,
+select {
+    padding: 0.5rem;
+    background-color: var(--primary-200);
+}
+
+form label {
+    font-size: 18px;
+    border-bottom: 1px solid var(--bg-300);
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.heading {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.input {
+    margin-bottom: 3rem;
+}
+
+.render {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+thead {
+    background-color: #4a6fa5;
+    color: white;
+}
+
+th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.2s;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: #f5f7fa;
+}
+
+td {
+    color: #333;
+}
+
+td:first-child {
+    font-weight: 500;
+}
+
+td:nth-child(2) {
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+td:nth-child(4) {
+    background-color: #f0f4f8;
+    color: #3f51b5;
+    font-weight: 500;
+}

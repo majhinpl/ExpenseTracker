@@ -1,0 +1,76 @@
+.primary-btn {
+  width: max-content;
+  color: var(--text-300);
+  padding: 8px 15px;
+  background-color: var(--accent-100);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+}
+
+.primary-btn:hover {
+  background-color: var(--primary-200);
+}
+
+.primary-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.call-to-action-btn :nth-child(1) {
+  width: max-content;
+  color: var(--text-300);
+  padding: 8px 15px;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--accent-200);
+  transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+}
+
+.call-to-action-btn :nth-child(2) {
+  width: max-content;
+  color: var(--text-300);
+  padding: 8px 15px;
+  background-color: var(--accent-100);
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+}
+
+.call-to-action-btn button:hover {
+  background-color: var(--primary-200);
+}
+
+.call-to-action-btn button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.secondary-btn {
+  width: max-content;
+  color: var(--text-300);
+  padding: 5px 10px;
+  background-color: var(--primary-200);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+}
+
+.secondary-btn:hover {
+  background-color: var(--primary-100);
+}
+
+.secondary-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
