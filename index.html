@@ -2,95 +2,93 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense Tracker</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/components/button.css">
-    <link rel="stylesheet" href="./expenseTracker.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/components/button.css" />
+  <link rel="stylesheet" href="./expenseTracker.css" />
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="content-wrapper">
-
-            <div class="input">
-                <div class="heading">
-                    <h2>Expense Tracker</h2>
-                </div>
-
-                <div class="form">
-                    <form action="#">
-                        <div class="date input-label">
-                            <label for="date">Date</label>
-                            <input type="date" name="date" id="date" required>
-                        </div>
-
-                        <div class="amount input-label">
-                            <label for="amount">Amount</label>
-                            <input type="number" name="amount" id="amount" min="0" required>
-                        </div>
-
-                        <div class="desc input-label">
-                            <label for="desc">Description</label>
-                            <input type="text" name="desc" id="desc" required>
-                        </div>
-
-                        <div class="categ input-label">
-                            <label for="categ">Category</label>
-                            <select name="categ" id="categ">
-                                <option value="food">Food</option>
-                                <option value="home">Home</option>
-                                <option value="transportation">Transportation</option>
-                                <option value="personal">Personal</option>
-                                <option value="pets">Pets</option>
-                                <option value="utilities">Utilities</option>
-                                <option value="traval">Travel</option>
-                                <option value="debt">Debt</option>
-                                <option value="credit-card">Credit Card</option>
-                                <option value="other">Other</option>
-                                <option value="blank" selected></option>
-
-                            </select>
-
-                        </div>
-
-                        <button class="primary-btn" type="submit">Submit</button>
-                    </form>
-                </div>
-
-            </div>
-
-            <div class="render">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Amount</th>
-                            <th>Description</th>
-                            <th>Category</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>02-Apr-25</td>
-                            <td>600</td>
-                            <td>Went to Nepal</td>
-                            <td>Travel</td>
-                            <td class="secondary-btn">Delete</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-
-
+  <div class="container">
+    <div class="content-wrapper">
+      <div class="input">
+        <div class="heading">
+          <h2>Expense Tracker</h2>
         </div>
+
+        <div class="form">
+          <form action="#">
+            <div class="date input-label">
+              <label for="date">Date</label>
+              <input type="date" name="date" id="date" required />
+            </div>
+
+            <div class="amount input-label">
+              <label for="amount">Amount</label>
+              <input type="number" name="amount" id="amount" min="0" required />
+            </div>
+
+            <div class="desc input-label">
+              <label for="desc">Description</label>
+              <input type="text" name="desc" id="desc" required />
+            </div>
+
+            <div class="categ input-label">
+              <label for="categ">Category</label>
+              <select name="categ" id="categ">
+                <option value="food">Food</option>
+                <option value="home">Home</option>
+                <option value="transportation">Transportation</option>
+                <option value="personal">Personal</option>
+                <option value="pets">Pets</option>
+                <option value="utilities">Utilities</option>
+                <option value="traval">Travel</option>
+                <option value="debt">Debt</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="other">Other</option>
+                <option value="blank" selected></option>
+              </select>
+            </div>
+
+            <button class="primary-btn submit" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="expense-sum">
+        <h2 class="total-amount"></h2>
+      </div>
+
+      <div class="render">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Description</th>
+              <th>Category</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 
+              <tr>
+                <td>02-Apr-25</td>
+                <td>600</td>
+                <td>Went to Nepal</td>
+                <td>Travel</td>
+                <td class="secondary-btn">Delete</td>
+              </tr>
+               -->
+          </tbody>
+        </table>
+      </div>
     </div>
-    <script src="./expenseTracker.js"></script>
+  </div>
+  <script src="./expenseTracker.js"></script>
 </body>
 
 </html>
